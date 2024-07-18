@@ -13,6 +13,21 @@
             <img src="./assets/icons/ulpik_logo.png" alt="Ulpik Logo" srcset="">
         </section>
         <p>En construcción...</p>
+
+        <p>Selccione uno de los paises</p>
+        <div class="select-options">
+            <button type="button" onclick="redirect('Ecuador')">🇪🇨 Ecuador</button>
+            <button type="button" onclick="redirect('Mexico')">🇲🇽 México</button>
+        </div>
     </main>
+    <script>
+        function redirect(country) {
+            if(country === 'Ecuador') {
+                window.location.href = `https://ulpik.com`;
+            }else if(country === 'Mexico') {
+                window.location.href = `https://ulpik.com.mx`;
+            }
+        }
+    </script>
 </body>
 </html>
